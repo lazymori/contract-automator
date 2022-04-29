@@ -2,18 +2,18 @@ require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 
 module.exports = {
-  solidity: "0.8.9",
+  solidity: "your version here",
   networks: {
-    rinekby: {
+    rinkeby: {
       url: "your url here",
-      accounts: ["your address here"]
+      accounts: ["your private keys here"]
     },
     ethereum: {
       url: "your url here",
-      accounts: ["your address here"]
-    }
+      accounts: ["your private keys here"]
+    },
   },
   etherscan: {
-    apiKey: "your api key here"
+    apiKey: "you api key here"
   }
 };

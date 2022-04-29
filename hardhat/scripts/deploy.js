@@ -1,11 +1,9 @@
 const hre = require("hardhat");
-const arguments = require("../arguments");
+const argu = require("../arguments");
 
 async function main() {
-  console.log(arguments);
-
   const Project = await hre.ethers.getContractFactory("Project");
-  const project = await Project.deploy(arguments);
+  const project = await Project.deploy(...argu);
 
   await project.deployed();
 
