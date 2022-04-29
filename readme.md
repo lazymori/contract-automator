@@ -12,8 +12,16 @@ This script helps you to compile, deploy, and verify your smart contract on whic
 
 #3. Fill in your network provider, wallet private key, and etherscan API key at `hardhat/hardhat.config.js`
 
-## Running the automation script
+## Running the script
+
+`npm i` to install all relevant libraries
 
 `bash automate.sh` if you are on a Windows OS.
 
 `./automate.sh` if you are on a Mac OS.
+
+# Supported Libraries
+
+Contracts may require other external libraries which could be installed manually using `npm`.
+
+Currently, openzepplin's contract libraries are provided in the `package.json`.
