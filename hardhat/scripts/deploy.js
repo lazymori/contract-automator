@@ -1,9 +1,13 @@
+const path = require('path');
+const fs = require('fs');
+
 const hre = require("hardhat");
-const argu = require("../arguments");
+const arg = require("../arguments");
 
 async function main() {
-  const Project = await hre.ethers.getContractFactory("Project");
-  const project = await Project.deploy(...argu);
+  var projectName = (((fs.readdirSync(path.join(__dirname, "..", "contracts")))[0]).split("."))[0];
+  const Project = await hre.ethers.getContractFactory(projectName);
+  const project = await Project.deploy(...arg);
 
   await project.deployed();
 
