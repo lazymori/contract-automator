@@ -15,4 +15,4 @@ sleep 30s
 
 echo "Verifying..."
 address=`echo "${raw}" | awk '{print $NF}'`
-npx hardhat verify --constructor-args arguments.js ${address}
+npx hardhat verify --constructor-args arguments.js ${address} --network $1

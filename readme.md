@@ -25,3 +25,9 @@ This script helps you to compile, deploy, and verify your smart contract on whic
 Contracts may require other external libraries which could be installed manually using `npm`.
 
 Currently, openzepplin's contract libraries are provided in the `package.json`.
+
+# Caveats
+
+This is a simple script, created with not a lot of use case and flexibility in mind. Therefore, it is unable to handle multiple contracts compilation and deployment at the same time.
+
+Do not put more than one contract in `hardhard/contracts` as the deploy script will only prepare for the first contract by alphabetical order.
