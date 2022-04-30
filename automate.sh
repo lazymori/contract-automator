@@ -9,7 +9,7 @@ echo "Compiling..."
 npx hardhat compile
 
 echo "Deploying to $1..."
-raw=`npx hardhat run --network $1 scripts/sample-script.js`
+raw=`npx hardhat run --network $1 scripts/deploy.js`
 
 sleep 30s
 
